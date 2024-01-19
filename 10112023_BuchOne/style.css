@@ -1,0 +1,468 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #333333;
+    
+
+}
+
+h1{
+    padding-top: 170px;
+    font-family: Merriweather;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 66px;
+    width: 589px;
+}
+h2{
+    padding-top: 140px;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 33px;
+    color: #BDBDBD;
+}
+h3{
+    padding-top: 40px;
+    font-family: Merriweather;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 69px;
+
+
+}
+
+.wrapper{
+    max-width: 1116px;
+    margin: 0 auto;
+}
+    
+    /* HEADER */
+.header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 33px 20px;
+}
+
+.logo img:first-child{
+    margin-right: 30px;
+}
+.logo > img{
+    height: 40px;
+}
+.header ul{
+    display: flex;
+    gap: 30px;
+    user-select: none;
+    cursor: pointer;
+    list-style: none;
+    text-transform: uppercase;
+ 
+}
+
+
+.burger_menu{
+    display: none;
+}
+
+/*  Banner */
+
+.banner{
+
+     color: #fff;
+    background-image: url(./media/Banner.png);
+    height: 600px;
+    background-size: 100%;
+    background-position: center;
+    background-size: cover;
+
+}
+.banner button{
+    margin-top: 80px;
+    padding: 10px 20px;
+    background-color:  #005FA3;
+    color: #fff;
+    font-weight: 400;
+    line-height: 25px;
+    border: none;
+    transition: background-color 1s;
+
+}
+.banner button:hover{
+    margin-top: 80px;
+    padding: 10px 20px;
+    background-color:  #033c64;
+    color: #fff;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+/* slider control */
+.slider_control{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.slider_control .slider_points {
+    display: flex;
+    gap: 40px;
+  
+}
+.slider_control .slider_points div{
+    width: 10px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 40%;
+    margin: 5px;
+    cursor: pointer;
+}
+.slider_control .slider_points div:hover{
+    opacity: 1;
+}
+.slider_control .slider_points .active{
+    opacity: 1;
+}
+.slider_arrow{
+    display: flex;
+    color: #fff;
+    font-size: 30px;
+    gap: 1px;
+}
+.slider_control .to_left, .slider_control .to_right{
+    width: 60px;
+    aspect-ratio: 1;
+    text-align: center;
+    background-color: #ffffff20;
+    line-height: 60px;
+    user-select: none;
+}
+.slider_control .to_left:hover, .slider_control .to_right:hover{
+    background-color: #ffffff40;
+}
+
+/* our services  */
+.services{
+    background-color: #EBEBEB;
+}
+.toright{
+    width: 30px;
+    aspect-ratio: 1;
+
+}
+.specialisation{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 102px;
+   padding-bottom: 140px;
+}
+.specialisation div{
+    position: relative;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    padding: 45px;
+    width: 350px;
+    height: 360px;
+    color: #fff;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 30.24px;
+}
+.specialisation div:hover::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0px;
+    
+    height: 360px;
+    width: 350px;
+    background-color: #005FA3A6;
+    
+}
+/* ---------------------------------- */
+
+/* ABOUT US */
+.text span{
+    color: #005FA3;
+}
+
+.about{
+    
+    padding-top: 140px;
+    padding-bottom: 140px;
+    display: flex;
+    gap: 125px;
+}
+.about h2{
+    margin-top: -140px !important;
+}
+.text > p{
+    margin-top: 60px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+  
+}
+
+.cases{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.cases div{
+    height: 100%;
+    background-color: #ddd;
+    width: 255px;
+    aspect-ratio: 1;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cases span{
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 66px;
+    letter-spacing: 5px;
+    color: #000;
+    margin-bottom: 30px;
+
+}
+.cases p{
+    letter-spacing: 0px;
+
+}
+
+.cases a{
+    letter-spacing: 0px;
+    margin-top: 47px;
+    /* bottom: 0; */
+}
+/* ---------------------------------- */
+
+/* Our clients*/
+
+.clients{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #EBEBEB;
+}
+.sliderImg{
+    position: relative;
+    overflow: hidden;
+    height: 100px;
+
+}
+.sliderImg .images{
+    position: absolute;
+    display: flex;
+    gap: 30px;
+    left: 0;
+}
+
+/* slider templary */
+.clients .slider_points div{
+    background-color: #005FA3;
+}
+.clients .slider_arrow {
+    background-color: #005FA3;
+}
+/* ОТЗЫВЫ */
+.reviews{
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.sliderReviews{
+    background-color: #EBEBEB;
+    padding: 45px 95px;
+    margin-bottom: 50px;
+    
+}
+
+.user{
+    margin-top: 58px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.username{
+    display: block;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+/* КОНТАКТЫ  Связь с нами*/
+.contacts{
+    background-image: url(./media/Banner.png);
+}
+.aboutUs h3{
+    margin-top: 0;
+    color: #fff;
+}
+.content{
+    display: flex;
+
+}
+.contacts h2{
+    color: #fff;
+    margin-top: 122px;
+    margin-bottom: 0;
+}
+
+.aboutUs p{
+    margin-top: 60px; 
+    color: #fff;
+}
+.contactsData{
+    margin-top: 80px;
+    display: flex;
+    align-items: baseline;
+    gap: 40px;
+}
+.contactsData a{
+    text-decoration: none;
+    color: #fff;
+}
+.contactsData img{
+    vertical-align: middle;
+}
+.contactsData span{
+    vertical-align: middle;
+}
+
+.name{
+    display: flex;
+    gap: 30px;
+    margin-top: 122px;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+form input{
+    background-color: #005fa300;
+    border: none;
+    border-bottom: 2px solid #fff;
+    padding: 20px 20px;
+    outline: none;
+
+}
+.textarea{
+    height: 130px;
+}
+.formBtn{
+    margin-top: 80px;
+    margin-bottom: 120px;
+    padding: 20px 75px;
+    background-color:  #005FA3;
+    
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 24.84px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+
+/* slider templary */
+.reviews .slider_points div{
+    background-color: #005FA3;
+}
+.reviews .slider_arrow {
+    background-color: #005FA3;
+}
+
+@media (max-width:800px) {
+    .wrapper{
+        min-width: 592px;
+    }
+    /* HEADER */
+    .header ul{
+        position: absolute;
+        right: 20px;
+        display: none;
+        flex-direction: column;
+        background-color: #ffffffda;
+      
+        top: 50px;
+        gap: 0;
+    }
+    .header ul.show{
+        display: flex;
+    }
+    .header nav li{
+        padding: 10px 20px;
+    }
+    .header nav li:hover{
+       padding: 20px;
+        background-color: rgba(0, 255, 255, 0.596);
+    }
+
+    .burger_menu{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        padding: 10px;
+     
+      
+        /* border: 1px solid #000; */
+        
+    
+    }
+    .burger_menu span{
+      border-bottom: 3px solid #000;
+      width: 25px;
+         transition: rotate .5s;
+    }
+    .burger_menu.active{
+        padding: 20px;
+           transition: rotate .5s;
+    }
+    .burger_menu.active span:first-child{
+        position: absolute;
+        rotate: 45deg;
+        /* right: 3px; */
+    }
+    .burger_menu.active span:last-child{
+        position: absolute;
+        rotate: -45deg;
+        /* right: 3px; */
+    }
+    .burger_menu.active span:nth-child(2){
+        position: absolute;
+        rotate: 45deg;
+        /* right: 3px; */
+    }
+
+    /* BANNER */
+
+    /*  About */
+    .services .specialisation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+
+}
